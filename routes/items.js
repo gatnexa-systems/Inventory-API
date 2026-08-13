@@ -6,3 +6,7 @@ router.get('/', (req, res) => {
 });
 
 module.exports = router;
+
+router.post('/', (req, res) => {
+  res.status(501).json({ error: 'Not implemented yet' });
+});
