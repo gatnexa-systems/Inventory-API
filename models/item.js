@@ -7,3 +7,7 @@ class Item {
 }
 
 module.exports = Item;
+
+module.exports.validate = (item) => {
+  return item.name && item.quantity >= 0;
+};
