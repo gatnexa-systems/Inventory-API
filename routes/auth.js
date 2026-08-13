@@ -7,3 +7,7 @@ router.post('/login', (req, res) => {
 });
 
 module.exports = router;
+
+router.post('/register', (req, res) => {
+  res.status(501).json({ error: 'Not implemented yet' });
+});
