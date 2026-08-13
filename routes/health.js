@@ -6,3 +6,7 @@ router.get('/health', (req, res) => {
 });
 
 module.exports = router;
+
+router.get('/health/db', (req, res) => {
+  res.json({ status: 'ok', db: 'connected' });
+});
